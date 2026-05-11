@@ -23,7 +23,7 @@ export default function Home() {
                 Australia & International
               </div>
               
-              <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
                 Compliance.<br />
                 <span className="text-accent drop-shadow-[0_0_15px_rgba(0,242,254,0.3)]">Confidence.</span><br />
                 Excellence.
@@ -33,16 +33,16 @@ export default function Home() {
                 Reliance Consultant Services delivers expert ISO consulting, auditing, and training across quality management, safety, environmental, rail safety, and information security — empowering your organisation to achieve world-class standards.
               </p>
               
-              <div className="flex flex-wrap gap-4 mb-16">
-                <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-accent/80 hover:shadow-[0_8px_20px_rgba(0,242,254,0.4)] hover:-translate-y-1 transition-all">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-16">
+                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-accent/80 hover:shadow-[0_8px_20px_rgba(0,242,254,0.4)] hover:-translate-y-1 transition-all w-full sm:w-auto">
                   <MessageSquare size={20} /> Get Free Consultation
                 </Link>
-                <Link href="/services" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all">
+                <Link href="/services" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all w-full sm:w-auto">
                   Explore Services <ArrowRight size={20} />
                 </Link>
               </div>
               
-              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-white/10">
                 {[
                   { num: "150+", label: "Projects Completed" },
                   { num: "20+", label: "Years Experience" },
@@ -95,10 +95,10 @@ export default function Home() {
       <div className="bg-primary-foreground py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-between gap-6 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
           {/* Trust logos or icons could go here, currently text items */}
-          <div className="flex items-center gap-2 font-medium text-sm text-primary"><Award className="text-accent" /> ISO Certified Consultants</div>
-          <div className="flex items-center gap-2 font-medium text-sm text-primary"><Globe className="text-accent" /> Australia-wide & International</div>
-          <div className="flex items-center gap-2 font-medium text-sm text-primary"><ShieldCheck className="text-accent" /> Government & Private Sector</div>
-          <div className="flex items-center gap-2 font-medium text-sm text-primary"><Users className="text-accent" /> 20+ Years Experience</div>
+          <div className="flex items-center gap-2 font-medium text-xs sm:text-sm text-primary"><Award className="text-accent w-4 h-4 sm:w-5 sm:h-5" /> ISO Certified</div>
+          <div className="flex items-center gap-2 font-medium text-xs sm:text-sm text-primary"><Globe className="text-accent w-4 h-4 sm:w-5 sm:h-5" /> Australia-wide & Int.</div>
+          <div className="flex items-center gap-2 font-medium text-xs sm:text-sm text-primary"><ShieldCheck className="text-accent w-4 h-4 sm:w-5 sm:h-5" /> Gov & Private Sector</div>
+          <div className="flex items-center gap-2 font-medium text-xs sm:text-sm text-primary"><Users className="text-accent w-4 h-4 sm:w-5 sm:h-5" /> 20+ Yrs Experience</div>
         </div>
       </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 px-4 py-1.5 rounded-full mb-4">What We Do</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Comprehensive Compliance & Risk Solutions</h2>
-            <p className="text-foreground/60 text-lg">From initial gap analysis to full certification, we support your journey across all major ISO standards and regulatory frameworks.</p>
+            <p className="text-foreground/60 text-base md:text-lg">From initial gap analysis to full certification, we support your journey across all major ISO standards and regulatory frameworks.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -212,8 +212,8 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/20 blur-[120px] rounded-full pointer-events-none mix-blend-screen"></div>
         
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Ready to Achieve Compliance Excellence?</h2>
-          <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto">Speak with one of our specialists today and discover how Reliance Consultant Services can strengthen your organisation's compliance posture.</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Achieve Compliance Excellence?</h2>
+          <p className="text-base md:text-lg text-white/70 mb-10 max-w-2xl mx-auto">Speak with one of our specialists today and discover how Reliance Consultant Services can strengthen your organisation's compliance posture.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-[#f857a6] hover:shadow-[0_8px_20px_rgba(0,242,254,0.4)] hover:-translate-y-1 transition-all">
               Get Free Consultation

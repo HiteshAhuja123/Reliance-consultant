@@ -45,11 +45,11 @@ export function Navbar() {
             <div className="w-11 h-11 bg-accent rounded-xl flex items-center justify-center font-bold text-lg text-white shadow-lg group-hover:scale-105 transition-transform">
               RC
             </div>
-            <div className="text-white">
-              <span className="font-bold text-lg leading-tight block">
+            <div className="text-white hidden sm:block">
+              <span className="font-bold text-sm md:text-lg leading-tight block">
                 Reliance Consultant
               </span>
-              <span className="text-xs font-medium text-white/60 tracking-wider uppercase block">
+              <span className="text-[10px] md:text-xs font-medium text-white/60 tracking-wider uppercase block">
                 Services Pty Ltd
               </span>
             </div>
