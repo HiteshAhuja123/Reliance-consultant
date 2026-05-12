@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageLoader } from "@/components/PageLoader";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className={`${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <PageLoader />
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

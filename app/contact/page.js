@@ -48,8 +48,8 @@ export default function Contact() {
       {/* PAGE HERO */}
       <section className="relative pt-40 pb-24 bg-primary overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent/10 blur-[100px] rounded-full"></div>
-          <div className="absolute bottom-0 right-0 w-[40%] h-[40%] bg-[#f857a6]/10 blur-[100px] rounded-full"></div>
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent/10 blur-3xl rounded-full"></div>
+          <div className="absolute bottom-0 right-0 w-[40%] h-[40%] bg-primary/10 blur-3xl rounded-full"></div>
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex items-center gap-2 text-sm text-white/50 mb-6">
@@ -143,7 +143,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">Service of Interest <span className="text-red-400">*</span></label>
-                    <select required className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm text-foreground focus:outline-none focus:border-accent transition-colors">
+                    <select required className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm text-foreground focus:outline-none focus:border-accent transition-colors appearance-none cursor-pointer">
                       <option value="">Select a service area…</option>
                       <option>Quality Management (ISO 9001)</option>
                       <option>Safety / WHS / OHS</option>
@@ -169,7 +169,7 @@ export default function Contact() {
                       </span>
                     </label>
                   </div>
-                  <button type="submit" className="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-[#f857a6] hover:shadow-[0_8px_20px_rgba(0,242,254,0.3)] hover:-translate-y-0.5 transition-all">
+                  <button type="submit" className="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-primary hover:shadow-[0_8px_20px_rgba(39,105,114,0.3)] hover:-translate-y-0.5 transition-all">
                     Send Message
                   </button>
                 </form>

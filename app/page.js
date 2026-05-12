@@ -76,7 +76,7 @@ export default function Home() {
         {/* Background Mesh */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-[-20%] left-[-10%] w-[40%] h-[40%] bg-accent/10 blur-3xl rounded-full"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[#f857a6]/10 blur-3xl rounded-full"></div>
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-primary/10 blur-3xl rounded-full"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
@@ -103,7 +103,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-16">
-                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-accent/80 hover:shadow-[0_8px_20px_rgba(0,242,254,0.4)] hover:-translate-y-1 transition-all w-full sm:w-auto">
+                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-accent/80 hover:shadow-[0_8px_20px_rgba(39,105,114,0.35)] hover:-translate-y-1 transition-all w-full sm:w-auto">
                   <MessageSquare size={20} /> Get Free Consultation
                 </Link>
                 <Link href="/services" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all w-full sm:w-auto">
@@ -125,7 +125,7 @@ export default function Home() {
             <div className="relative hidden lg:block">
               <div className="bg-white/10 border border-white/10 rounded-3xl p-8 shadow-2xl relative z-10">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent to-[#f857a6] flex items-center justify-center text-white shadow-[0_4px_16px_rgba(0,242,254,0.3)]">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center text-white shadow-[0_4px_16px_rgba(0,242,254,0.3)]">
                     <ShieldCheck size={28} />
                   </div>
                   <div>
@@ -137,9 +137,9 @@ export default function Home() {
                 <div className="space-y-3">
                   {heroCoreServices.map((service, i) => (
                     <div key={i} className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 hover:bg-white/10 transition-colors">
-                      <div className="w-2 h-2 rounded-full bg-[#f857a6]"></div>
+                      <div className="w-2 h-2 rounded-full bg-primary"></div>
                       <span className="text-sm font-medium text-white/80">{service.name}</span>
-                      <span className="ml-auto text-xs font-bold px-2.5 py-1 bg-accent/20 text-accent rounded-full">{service.badge}</span>
+                      <span className="ml-auto text-xs font-bold px-2.5 py-1 bg-white/15 text-white rounded-full">{service.badge}</span>
                     </div>
                   ))}
                 </div>
@@ -223,7 +223,7 @@ export default function Home() {
                   <span className="text-sm font-medium text-foreground/60">{stat.label}</span>
                 </div>
               ))}
-              <div className="sm:col-span-2 bg-gradient-to-br from-accent/10 to-[#f857a6]/10 border border-accent/20 rounded-2xl p-8 flex items-center gap-6">
+              <div className="sm:col-span-2 bg-gradient-to-br from-accent/10 to-primary/10 border border-accent/20 rounded-2xl p-8 flex items-center gap-6">
                 <div className="w-16 h-16 rounded-full bg-accent/20 text-accent flex items-center justify-center shrink-0">
                   <Award size={32} />
                 </div>
@@ -246,7 +246,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">{ctaBanner.title}</h2>
           <p className="text-base md:text-lg text-white/70 mb-10 max-w-2xl mx-auto">{ctaBanner.description}</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href={ctaBanner.cta.href} className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-[#f857a6] hover:shadow-[0_8px_20px_rgba(0,242,254,0.4)] hover:-translate-y-1 transition-all">
+            <Link href={ctaBanner.cta.href} className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-primary hover:shadow-[0_8px_20px_rgba(39,105,114,0.35)] hover:-translate-y-1 transition-all">
               {ctaBanner.cta.text}
             </Link>
           </div>

@@ -95,8 +95,8 @@ export default function Services() {
       {/* PAGE HERO */}
       <section className="relative pt-40 pb-24 bg-primary overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent/10 blur-[100px] rounded-full"></div>
-          <div className="absolute bottom-0 right-0 w-[40%] h-[40%] bg-[#f857a6]/10 blur-[100px] rounded-full"></div>
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent/10 blur-3xl rounded-full"></div>
+          <div className="absolute bottom-0 right-0 w-[40%] h-[40%] bg-primary/10 blur-3xl rounded-full"></div>
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex items-center gap-2 text-sm text-white/50 mb-6">
@@ -154,7 +154,7 @@ export default function Services() {
       <section className="py-24 bg-primary">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-yellow-400 bg-yellow-400/10 border border-yellow-400/20 px-4 py-1.5 rounded-full mb-4">Standards & Frameworks</span>
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 px-4 py-1.5 rounded-full mb-4">Standards & Frameworks</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">ISO Standards & Regulatory Frameworks We Cover</h2>
             <p className="text-white/50">Our consultants hold certifications across a broad range of international standards and Australian legislative frameworks.</p>
           </div>
@@ -209,16 +209,16 @@ export default function Services() {
 
       {/* CTA */}
       <section className="relative py-24 bg-primary overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 blur-[100px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 blur-3xl rounded-full pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Not Sure Where to Start?</h2>
           <p className="text-lg text-white/60 mb-10 max-w-2xl mx-auto">Our free initial consultation includes a high-level compliance health check so you know exactly where you stand and what steps to take next.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-[#f857a6] hover:shadow-[0_8px_20px_rgba(0,242,254,0.4)] hover:-translate-y-1 transition-all">
+            <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-primary hover:shadow-[0_8px_20px_rgba(39,105,114,0.35)] hover:-translate-y-1 transition-all">
               Get Free Consultation
             </Link>
-            <Link href="/portfolio" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all">
-              View Our Work
+            <Link href="/about" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all">
+              About Us
             </Link>
           </div>
         </div>

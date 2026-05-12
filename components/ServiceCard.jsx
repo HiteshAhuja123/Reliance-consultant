@@ -6,7 +6,7 @@ export function ServiceCard({ icon: Icon, title, description, href }) {
     <div className="bg-card border border-border rounded-2xl p-9 relative overflow-hidden group hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300">
       <div className="absolute top-0 left-0 right-0 h-1 bg-accent origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
       
-      <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 group-hover:bg-accent group-hover:text-primary-foreground group-hover:shadow-[0_4px_16px_rgba(0,242,254,0.4)] transition-all duration-300">
+      <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 group-hover:bg-accent group-hover:text-primary-foreground group-hover:shadow-[0_4px_16px_rgba(39,105,114,0.35)] transition-all duration-300">
         <Icon size={32} />
       </div>
       
