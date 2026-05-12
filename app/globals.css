@@ -19,15 +19,15 @@
 }
 
 :root {
-  --background: #f1f5f9;
-  --foreground: #1e293b;
-  --primary: #1e3a8a;
-  --primary-foreground: #ffffff;
-  --accent: #2563eb;
+  --background: #f7f4f3;
+  --foreground: #283a50;
+  --primary: #283a50;
+  --primary-foreground: #f7f4f3;
+  --accent: #276972;
   --accent-foreground: #ffffff;
   --card: #ffffff;
-  --card-foreground: #1e293b;
-  --border: #cbd5e1;
+  --card-foreground: #283a50;
+  --border: #a6afb9;
 }
 
 .dark {
@@ -44,4 +44,11 @@
 
 html {
   scroll-behavior: smooth;
+  /* Eliminates 300ms tap delay on Safari iOS */
+  touch-action: manipulation;
+}
+
+a, button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }

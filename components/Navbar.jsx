@@ -86,15 +86,13 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            {mounted && (
-              <button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="p-2 rounded-lg bg-white/5 text-white/80 hover:bg-white/10 hover:text-white transition-colors"
-                aria-label="Toggle Dark Mode"
-              >
-                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
-            )}
+            <button
+              onClick={() => mounted && setTheme(theme === "dark" ? "light" : "dark")}
+              className="p-2 rounded-lg bg-white/5 text-white/80 hover:bg-white/10 hover:text-white transition-colors"
+              aria-label="Toggle Dark Mode"
+            >
+              {mounted && theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
             
             <Link
               href="/contact"
