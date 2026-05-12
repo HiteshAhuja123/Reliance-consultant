@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Sun, Moon, Menu, X } from "lucide-react";
@@ -12,13 +12,27 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const scrolledRef = useRef(false);
 
   useEffect(() => {
     setMounted(true);
+    let ticking = false;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(() => {
+          const nextScrolled = window.scrollY > 50;
+          if (scrolledRef.current !== nextScrolled) {
+            scrolledRef.current = nextScrolled;
+            setScrolled(nextScrolled);
+          }
+          ticking = false;
+        });
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -36,8 +50,8 @@ export function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 ${
           scrolled
-            ? "bg-black/80 backdrop-blur-md border-b border-white/5 py-3 shadow-lg"
-            : "py-5"
+            ? "bg-primary border-b border-white/10 py-3 shadow-lg"
+            : "bg-primary/90 py-5"
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -101,7 +115,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-[100] bg-background/95 backdrop-blur-xl transition-opacity duration-300 flex flex-col items-center justify-center gap-6 ${
+        className={`fixed inset-0 z-[100] bg-background/95 transition-opacity duration-300 flex flex-col items-center justify-center gap-6 ${
           mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >

@@ -19,15 +19,15 @@
 }
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #f1f5f9;
+  --foreground: #1e293b;
   --primary: #1e3a8a;
   --primary-foreground: #ffffff;
-  --accent: #0ea5e9;
+  --accent: #2563eb;
   --accent-foreground: #ffffff;
   --card: #ffffff;
-  --card-foreground: #0f172a;
-  --border: #e2e8f0;
+  --card-foreground: #1e293b;
+  --border: #cbd5e1;
 }
 
 .dark {
