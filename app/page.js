@@ -84,9 +84,12 @@ export default function Home() {
 
             {/* Hero Left Content */}
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
-                <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                Australia & International
+              <div className="inline-flex flex-col sm:flex-row items-center gap-2 bg-white/10 border border-white/15 text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6 shadow-sm">
+                <div className="inline-flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                  Australia & International
+                </div>
+                <span className="text-[10px] text-white/70 uppercase tracking-[0.2em]">ISO Consulting & Certification</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -98,7 +101,7 @@ export default function Home() {
                 ))}
               </h1>
 
-              <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-10">
+              <p className="max-w-2xl text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-10">
                 {heroDescription}
               </p>
 
@@ -149,13 +152,25 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 px-4 pb-4 pt-3 bg-black/80 backdrop-blur-md border-t border-white/10">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-white/60">Ready to start?</p>
+            <p className="text-sm font-semibold text-white">Book a free consultation</p>
+          </div>
+          <Link href="/contact" className="inline-flex items-center justify-center px-4 py-3 rounded-2xl bg-accent text-sm font-semibold text-white shadow-lg hover:bg-accent/90 transition">
+            Contact Us
+          </Link>
+        </div>
+      </div>
+
       {/* ======= TRUST BAR ======= */}
       <div className="bg-primary-foreground py-8">
-        <div className="hidden sm:flex max-w-7xl mx-auto px-6 flex-wrap items-center justify-between gap-6 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+        <div className="flex flex-wrap max-w-7xl mx-auto px-6 items-center justify-center gap-4 sm:justify-between opacity-90 transition-all duration-500">
           {trust.map((item, i) => {
             const Icon = trustIcons[i];
             return (
-              <div key={i} className="flex items-center gap-2 font-medium text-xs sm:text-sm text-primary">
+              <div key={i} className="flex items-center gap-2 font-medium text-xs sm:text-sm text-white/85 bg-white/5 border border-white/10 rounded-full px-4 py-2">
                 <Icon className="text-accent w-4 h-4 sm:w-5 sm:h-5" /> {item.label}
               </div>
             );

@@ -15,7 +15,7 @@ export function ServiceCard({ icon: Icon, title, description, href }) {
       
       <Link 
         href={href} 
-        className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent group-hover:gap-2.5 transition-all"
+        className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent group-hover:text-white group-hover:gap-2.5 transition-all"
       >
         Learn More <ArrowRight size={16} />
       </Link>

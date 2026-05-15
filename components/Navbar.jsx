@@ -101,8 +101,10 @@ export function Navbar() {
             </Link>
 
             <button
-              className="md:hidden p-2 text-white"
+              className="md:hidden p-2 rounded-lg bg-white/5 text-white hover:bg-white/10 transition-colors"
               onClick={() => setMobileMenuOpen(true)}
+              aria-expanded={mobileMenuOpen}
+              aria-label="Open mobile menu"
             >
               <Menu size={24} />
             </button>
@@ -112,13 +114,14 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-[100] bg-background/95 transition-opacity duration-300 flex flex-col items-center justify-center gap-6 ${
+        className={`fixed inset-0 z-[100] bg-background/95 backdrop-blur-xl transition-opacity duration-300 flex flex-col items-center justify-center gap-6 px-6 ${
           mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         <button
-          className="absolute top-6 right-6 p-2 text-foreground/60 hover:text-foreground"
+          className="absolute top-6 right-6 p-2 rounded-full bg-white/5 text-foreground/70 hover:bg-white/10 hover:text-foreground transition-colors"
           onClick={() => setMobileMenuOpen(false)}
+          aria-label="Close mobile menu"
         >
           <X size={32} />
         </button>
@@ -132,6 +135,13 @@ export function Navbar() {
             {link.name}
           </Link>
         ))}
+        <Link
+          href="/contact"
+          onClick={() => setMobileMenuOpen(false)}
+          className="mt-4 inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-accent/90 transition"
+        >
+          Get Free Consultation
+        </Link>
       </div>
     </>
   );
