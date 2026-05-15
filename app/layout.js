@@ -13,7 +13,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Reliance Consultant Services Pty Ltd | Compliance. Confidence. Excellence.",
+  title: "Reliance Consultant Services Pvt Ltd | Compliance. Confidence. Excellence.",
   description: "Australia's trusted consulting partner for Quality, Safety, Environmental Management, Rail Safety, Risk and Information Security. ISO certified experts.",
 };
 

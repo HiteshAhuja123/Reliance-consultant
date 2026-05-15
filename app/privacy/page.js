@@ -2,8 +2,8 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy | Reliance Consultant Services Pty Ltd",
-  description: "Privacy Policy for Reliance Consultant Services Pty Ltd — how we collect, use, and protect your personal information.",
+  title: "Privacy Policy | Reliance Consultant Services Pvt Ltd",
+  description: "Privacy Policy for Reliance Consultant Services Pvt Ltd — how we collect, use, and protect your personal information.",
 };
 
 export default function Privacy() {
@@ -31,7 +31,7 @@ export default function Privacy() {
 
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">1. Introduction</h2>
-              <p>Reliance Consultant Services Pty Ltd (ABN: XX XXX XXX XXX) ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).</p>
+              <p>Reliance Consultant Services Pvt Ltd (ABN: XX XXX XXX XXX) ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).</p>
             </div>
 
             <div>
@@ -80,7 +80,7 @@ export default function Privacy() {
               <h2 className="text-xl font-bold text-foreground mb-3">8. Contact Us</h2>
               <p>If you have any questions about this Privacy Policy or wish to make a privacy-related request, please contact:</p>
               <div className="bg-card border border-border rounded-xl p-6 mt-4 space-y-2 text-sm">
-                <p><strong className="text-foreground">Reliance Consultant Services Pty Ltd</strong></p>
+                <p><strong className="text-foreground">Reliance Consultant Services Pvt Ltd</strong></p>
                 <p>Level 10, 123 Business Avenue, Sydney NSW 2000, Australia</p>
                 <p>Email: <a href="mailto:privacy@relianceconsultant.com.au" className="text-accent hover:underline">privacy@relianceconsultant.com.au</a></p>
                 <p>Phone: +61 2 9000 0000</p>

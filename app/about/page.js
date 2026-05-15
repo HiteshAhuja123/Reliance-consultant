@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Target, Eye, Handshake, ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Reliance Consultant Services Pty Ltd",
+  title: "About Us | Reliance Consultant Services Pvt Ltd",
   description:
     "Learn about Reliance Consultant Services — our story, mission, values, and the expert team behind Australia's trusted compliance consulting firm.",
 };
@@ -69,7 +69,7 @@ export default function About() {
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 px-4 py-1.5 rounded-full mb-4">Our Story</span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Built on a Foundation of Trust &amp; Expertise</h2>
               <p className="text-foreground/60 leading-relaxed mb-4">
-                Reliance Consultant Services Pty Ltd was established by a team of seasoned compliance and risk professionals who recognised a critical gap in the Australian market: organisations needed a consulting partner that combined genuine technical expertise with practical, on-the-ground support.
+                Reliance Consultant Services Pvt Ltd was established by a team of seasoned compliance and risk professionals who recognised a critical gap in the Australian market: organisations needed a consulting partner that combined genuine technical expertise with practical, on-the-ground support.
               </p>
               <p className="text-foreground/60 leading-relaxed mb-4">
                 Since our inception, we have grown from a small boutique practice to a nationally recognised firm, trusted by corporations, government bodies, infrastructure operators, and SMEs across Australia and internationally.

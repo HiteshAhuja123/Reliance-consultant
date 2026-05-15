@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <>
       {/* ======= HERO ======= */}
-      <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-primary">
+      <section className="relative lg:min-h-screen min-h-[calc(100vh-5rem)] flex items-center pt-24 pb-12 sm:pt-32 sm:pb-20 overflow-hidden bg-primary">
         {/* Background Mesh */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-[-20%] left-[-10%] w-[40%] h-[40%] bg-accent/10 blur-3xl rounded-full"></div>
@@ -84,12 +84,12 @@ export default function Home() {
 
             {/* Hero Left Content */}
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-accent text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+              <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
                 Australia & International
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
                 {heroTitleLines.map((line, index) => (
                   <Fragment key={index}>
                     {line}
@@ -98,20 +98,20 @@ export default function Home() {
                 ))}
               </h1>
 
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-10">
+              <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-10">
                 {heroDescription}
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-16">
-                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-accent/80 hover:shadow-[0_8px_20px_rgba(39,105,114,0.35)] hover:-translate-y-1 transition-all w-full sm:w-auto">
+                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-accent to-accent/80 hover:shadow-[0_8px_20px_rgba(39,105,114,0.35)] hover:-translate-y-1 transition-all w-full sm:w-auto">
                   <MessageSquare size={20} /> Get Free Consultation
                 </Link>
-                <Link href="/services" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all w-full sm:w-auto">
+                <Link href="/services" className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-white border-2 border-white/20 hover:border-white hover:bg-white/10 transition-all w-full sm:w-auto">
                   Explore Services <ArrowRight size={20} />
                 </Link>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-white/10">
+              <div className="hidden sm:grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-white/10">
                 {heroStats.map((stat, i) => (
                   <div key={i}>
                     <span className="block text-3xl font-bold text-accent mb-1">{stat.num}</span>
@@ -151,7 +151,7 @@ export default function Home() {
 
       {/* ======= TRUST BAR ======= */}
       <div className="bg-primary-foreground py-8">
-        <div className="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-between gap-6 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+        <div className="hidden sm:flex max-w-7xl mx-auto px-6 flex-wrap items-center justify-between gap-6 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
           {trust.map((item, i) => {
             const Icon = trustIcons[i];
             return (
@@ -164,7 +164,7 @@ export default function Home() {
       </div>
 
       {/* ======= SERVICES OVERVIEW ======= */}
-      <section className="py-24 bg-background">
+      <section className="py-16 sm:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 px-4 py-1.5 rounded-full mb-4">{servicesOverview.label}</span>
@@ -190,7 +190,7 @@ export default function Home() {
       </section>
 
       {/* ======= WHY CHOOSE US ======= */}
-      <section className="py-24 bg-card/50">
+      <section className="py-16 sm:py-24 bg-card/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -238,7 +238,7 @@ export default function Home() {
       </section>
 
       {/* ======= CTA BANNER ======= */}
-      <section className="relative py-24 bg-primary overflow-hidden">
+      <section className="relative py-16 sm:py-24 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 blur-3xl rounded-full pointer-events-none"></div>
 

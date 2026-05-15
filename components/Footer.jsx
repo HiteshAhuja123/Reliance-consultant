@@ -15,7 +15,7 @@ export function Footer() {
                 Reliance Consultant
               </span>
               <span className="text-xs font-medium text-white/60 tracking-wider uppercase block">
-                Services Pty Ltd
+                Services Pvt Ltd
               </span>
             </div>
           </Link>
@@ -105,7 +105,7 @@ export function Footer() {
 
       <div className="border-t border-white/10 py-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/40">
-          <p>© {new Date().getFullYear()} Reliance Consultant Services Pty Ltd. All rights reserved. ABN: XX XXX XXX XXX</p>
+          <p>© {new Date().getFullYear()} Reliance Consultant Services Pvt Ltd. All rights reserved. ABN: XX XXX XXX XXX</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-accent transition-colors">Terms of Service</Link>

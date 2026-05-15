@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Award, HardHat, Leaf, Train, Gavel, AlertTriangle, Lock, GraduationCap, ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Services | Reliance Consultant Services Pty Ltd",
+  title: "Services | Reliance Consultant Services Pvt Ltd",
   description:
     "Expert consulting, auditing, and training in Quality Management (ISO 9001), Safety, Environmental (ISO 14001), Rail Safety, FSC, Risk Management, and ISMS (ISO 27001).",
 };
