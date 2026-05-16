@@ -164,19 +164,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ======= TRUST BAR ======= */}
-      <div className="bg-primary-foreground py-8">
-        <div className="flex flex-wrap max-w-7xl mx-auto px-6 items-center justify-center gap-4 sm:justify-between opacity-90 transition-all duration-500">
-          {trust.map((item, i) => {
-            const Icon = trustIcons[i];
-            return (
-              <div key={i} className="flex items-center gap-2 font-medium text-xs sm:text-sm text-white/85 bg-white/5 border border-white/10 rounded-full px-4 py-2">
-                <Icon className="text-accent w-4 h-4 sm:w-5 sm:h-5" /> {item.label}
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
       {/* ======= SERVICES OVERVIEW ======= */}
       <section className="py-16 sm:py-24 bg-background">
