@@ -1,9 +1,8 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import { ArrowRight, MessageSquare, ShieldCheck, Award, HardHat, Leaf, Train, AlertTriangle, Lock, Users, Activity, Target, Globe } from "lucide-react";
+import { ArrowRight, MessageSquare, ShieldCheck, Award, HardHat, Leaf, Train, AlertTriangle, Lock, Users, Activity, Target } from "lucide-react";
 import { ServiceCard } from "@/components/ServiceCard";
 
-const trustIcons = [Award, Globe, ShieldCheck, Users];
 const serviceIcons = [Award, HardHat, Leaf, Train, AlertTriangle, Lock];
 const whyChooseIcons = [Users, Activity, Target];
 
@@ -22,12 +21,6 @@ const heroCoreServices = [
   { name: "Rail Safety", badge: "RSNL" },
   { name: "Information Security", badge: "ISO 27001" },
   { name: "Risk Management", badge: "ISO 31000" },
-];
-const trust = [
-  { label: "ISO Certified Consultants" },
-  { label: "Australia-wide & International" },
-  { label: "Government & Private Sector" },
-  { label: "20+ Years Experience" },
 ];
 const servicesOverview = {
   label: "What We Do",
